@@ -8,7 +8,7 @@ const dbConnect = () => {
         dbName:"JobPortal"
     })
         .then(() => {
-        console.log(`Database Connected Succesfully`.white.bgRed.bold)
+        console.log(`Database Connected Successfully`.white.bgRed.bold);
         }).catch((err) => {
         console.log(err.message);
     })
