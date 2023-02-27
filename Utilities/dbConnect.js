@@ -5,7 +5,7 @@ const colors = require('colors');
 // database connection
 const dbConnect = () => {
     mongoose.connect(process.env.DATABASE_LOCAL, {
-        dbName:"BDJobs"
+        dbName:"JobPortal"
     })
         .then(() => {
         console.log(`Database Connected Succesfully`.white.bgRed.bold)
