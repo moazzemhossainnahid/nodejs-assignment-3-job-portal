@@ -11,14 +11,14 @@ const userSchema = mongoose.Schema(
       required: [true, "Please provide a first name"],
       trim: true,
       minLength: [3, "Name must be at least 3 characters."],
-      maxLength: [100, "Name is too large"],
+      maxLength: [50, "Name is too large"],
     },
     lastName: {
       type: String,
       required: [true, "Please provide a last name"],
       trim: true,
       minLength: [3, "Name must be at least 3 characters."],
-      maxLength: [100, "Name is too large"],
+      maxLength: [50, "Name is too large"],
     },
     email: {
       type: String,
@@ -153,7 +153,5 @@ module.exports = User;
 "presentAddress":"944 osthir Street",
 "permanentAddress":"944 Russell Street",
 "nationalIdImageURL":"https://i.ibb.co/WnFSs9Y/unnamed.webp",
-
-
 
 */
