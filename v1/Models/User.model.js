@@ -55,16 +55,13 @@ const userSchema = mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ["buyer", "store-manager", "admin"],
-      default: "buyer",
+      enum: ["Candidate", "Hiring Manager", "Admin"],
+      default: "Candidate",
     },
     contactNumber: {
       type: String,
       validate: [validator.isMobilePhone, "Please provide a valid contact number"],
     },
-
-    shippingAddress: String,
-
     imageURL: {
       type: String,
       validate: [validator.isURL, "Please provide a valid url"],
@@ -127,11 +124,11 @@ module.exports = User;
 /*
 
 {
+    "firstName": "Mezbaul Abedin",
+    "lastName": "Forhan",
     "email": "mezba1@test.com",
     "password": "mezba123456#A",
     "confirmPassword": "mezba123456#A",
-    "firstName": "Mezbaul Abedin",
-    "lastName": "Forhan",
     "shippingAddress": "944 osthir Street",
     "presentAddress": "944 osthir Street",
     "permanentAddress": "944 Russell Street",
